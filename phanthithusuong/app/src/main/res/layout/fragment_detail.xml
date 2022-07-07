@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.detailFragment">
+    <data>
+        <variable
+            name="mymodel"
+            type ="com.midterm.phanthithusuong.model.mymodel"
+
+            ></variable>
+    </data>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:columnCount="2"
+        android:rowCount="8">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Title:"
+            android:textSize="20dp"></TextView>
+
+        <TextView
+            android:id="@+id/tv_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@{mymodel.title}"
+            android:textSize="20dp"></TextView>
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Desc:"
+            android:textSize="20dp"></TextView>
+
+        <TextView
+            android:id="@+id/tv_desc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@{mymodel.desc}"
+            android:textSize="20dp"></TextView>
+
+        <TextView
+            android:id="@+id/tv_timestamp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Timestamp"
+            android:textSize="20dp"></TextView>
+
+        <TextView
+            android:id="@+id/tv_timestamp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@{mymodel.timeStamp}"
+            android:textSize="20dp"></TextView>
+
+
+
+
+    </GridLayout>
+
+</layout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="dog"
+            type ="com.example.dogapp2.model.DogBreed"
+            ></variable>
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".View.DetailFragment"
+        android:orientation="vertical">
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+        <ImageView
+            android:id="@+id/detail_avt"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            ></ImageView>
+        <TextView
+            android:id="@+id/tv_namedetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="40dp"
+            android:textColor="#050505"
+            android:text="@{dog.name}"
+            ></TextView>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:columnCount="2"
+            android:rowCount="3">
+
+            <TextView
+
+                android:id="@+id/tv_bredfor_detail"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Bred for:"
+                android:textColor="#675F5F"
+                android:textSize="20dp"></TextView>
+
+            <TextView
+                android:id="@+id/tv_bredfor_detail1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="@{dog.bredfor}"
+                android:textColor="#050505"
+                android:textSize="20dp"></TextView>
+
+            <TextView
+                android:id="@+id/tv_lifespan_detail"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Life span:"
+                android:textColor="#675F5F"
+                android:textSize="20dp"></TextView>
+
+            <TextView
+                android:id="@+id/tv_lifespan_detail1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="@{dog.lifeSpan}"
+                android:textColor="#050505"
+                android:textSize="20dp"></TextView>
+
+            <TextView
+                android:id="@+id/tv_origin_detail"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Origin"
+                android:textColor="#675F5F"
+                android:textSize="20dp"></TextView>
+
+            <TextView
+                android:id="@+id/tv_origin_detail1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="@{dog.origin}"
+                android:textColor="#050505"
+                android:textSize="20dp"></TextView>
+        </GridLayout>
+
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chauthai.swipereveallayout.SwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:mode="same_level"
+    app:dragEdge="right"
+    android:id="@+id/swipeRevealLayout"
+    tools:ignore="MissingClass">
+
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:id="@+id/layout_swipe"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:id="@+id/swipe_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:textSize="15dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/swipe_lifespan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Life Span: "
+            android:textSize="15dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/swipe_bredfor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bred for: "
+            android:textSize="15dp"
+            android:layout_marginBottom="10dp"/>
+
+
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/swipe_origin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Origin: "
+            android:textSize="15dp"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/avt"
+            android:layout_width="200dp"
+            android:layout_height="150dp"></ImageView>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="aaaaaaaaaaaaaa"
+            android:textColor="#070707"
+            android:textSize="20sp"></TextView>
+
+        <TextView
+            android:id="@+id/tv_bredfor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="aaaaaaaaaaaa"
+            android:textColor="#615E5E"></TextView>
+    </LinearLayout>
+
+
+</com.chauthai.swipereveallayout.SwipeRevealLayout>
